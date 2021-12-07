@@ -7,24 +7,24 @@ using namespace cv;
 /*
 int main(int argc, char** argv)
 {
-    Mat src = imread("F:\\img_process\\imgs\\alm.png");
-    imshow("ÊäÈëÍ¼Ïñ", src);
+    Mat src = imread("F:\\img_process\\imgs\\flaw.png");
+    imshow("è¾“å…¥å›¾åƒ", src);
     Mat gray, gray_mean, dst, binary1, binary2, binary;
     cvtColor(src, gray, COLOR_BGR2GRAY);
     medianBlur(gray, gray_mean, 201);
-    imshow("ÖĞÖµÂË²¨", gray_mean);
+    imshow("ä¸­å€¼æ»¤æ³¢", gray_mean);
     addWeighted(gray, -1, gray_mean, 1, 0, dst);
-    imshow("×ö²î", dst);
-    //ãĞÖµÌáÈ¡
+    imshow("åšå·®", dst);
+    //é˜ˆå€¼æå–
     threshold(dst, binary1, 10, 255, THRESH_BINARY | THRESH_OTSU);
-    imshow("¶şÖµ»¯", binary1);
+    imshow("äºŒå€¼åŒ–", binary1);
     Mat src_open, src_close;
-    //ĞÎÌ¬Ñ§
+    //å½¢æ€å­¦
     Mat kernel = getStructuringElement(MORPH_ELLIPSE, Size(7, 7), Point(-1, -1));
     morphologyEx(binary1, src_open, MORPH_OPEN, kernel, Point(-1, -1));
-    imshow("¿ªÔËËã", src_open);
+    imshow("å¼€è¿ç®—", src_open);
     morphologyEx(src_open, src_close, MORPH_CLOSE, kernel, Point(-1, -1));
-    imshow("±ÕÔËËã", src_close);
+    imshow("é—­è¿ç®—", src_close);
     vector<vector<Point>>contours;
     findContours(src_close, contours, RETR_EXTERNAL, CHAIN_APPROX_NONE, Point());
     for (int i = 0; i < contours.size(); i++)
@@ -36,7 +36,7 @@ int main(int argc, char** argv)
             drawContours(src, contours, i, Scalar(0, 0, 255), 2, 8);
         }
     }
-    imshow("½á¹û", src);
+    imshow("ç»“æœ", src);
     waitKey(0);
     return 0;
 }
