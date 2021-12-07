@@ -4,7 +4,7 @@
 
 using namespace std;
 using namespace cv;
-/*
+
 int main(int argc, char** argv)
 {
     Mat src = imread("F:\\img_process\\imgs\\flaw.png");
@@ -40,4 +40,3 @@ int main(int argc, char** argv)
     waitKey(0);
     return 0;
 }
-*/
