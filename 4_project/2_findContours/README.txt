@@ -8,4 +8,4 @@ coutour_flaw.cpp:
 https://mp.weixin.qq.com/s/0yWl-4oQGWXt2fJ0JIapaQ
 
 contour_compex.cpp:
-https://mp.weixin.qq.com/s/P_NsEFkKMgU7D4EbF9tELg
+寻找复杂背景下的物体轮廓（Opencv底帽）:https://mp.weixin.qq.com/s/P_NsEFkKMgU7D4EbF9tELg
