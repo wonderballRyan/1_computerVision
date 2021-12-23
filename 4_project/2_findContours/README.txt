@@ -10,3 +10,6 @@ https://mp.weixin.qq.com/s/IwAgr6x4ANJZjGb427Eipw
   
 contour_compex.cpp: 
 https://mp.weixin.qq.com/s/P_NsEFkKMgU7D4EbF9tELg
+
+contour_clip.cpp:
+使用Opencv多回形针角度（源码）：https://mp.weixin.qq.com/s/d9_0X_GCeKubj5UA1MBi8g
